@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Paella</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="page">
+        <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content">
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="#">Home</a></li>
+              <li><a href="#" class="cart-icon">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="product-detail">
+        <img src="./photo/seafood/Gemini_Generated_Image_ai4z1gai4z1gai4z.png" >
+        <h1 id="product-name">Seafood Paella</h1> <p class="description">Description:
+ A traditional Spanish paella, rich with saffron-infused rice and a bountiful selection of fresh seafood including shrimp, mussels, clams, and squid. A vibrant and flavorful communal dish.
+</p>
+        <p class="price" id="product-price">$32.00</p> 
+        <div class="options">
+            <h3>Add-ons:</h3>
+            <ul>
+                <li><input type="checkbox" id="addon-Add-Chorizo" data-addon-name="Add Chorizo" data-addon-price="$5.00"><label for="addon-Add-Chorizo">Add Chorizo (+$5.00) </label></li>
+                <li><input type="checkbox" id="addon-Extra-Shrimp" data-addon-name="Extra Shrimp" data-addon-price="7.00"><label for="Extra Shrimp">Extra Shrimp (+$7.00)</label></li>
+            </ul>
+        </div>
+        <button class="add-to-cart-btn" onclick="handleAddToCart()">Add to cart</button> <div class="allergens">
+            <p><strong>Allergens:</strong> Shellfish (Shrimp, Mussels, Clams), Fish (Squid), Gluten (from rice, if not certified gluten-free), Garlic.
+</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="contact">
+          <h3>Contact / Reservation</h3>
+          <p>Phone: 123-456-789</p>
+          <p>Adress: Main St</p>
+        </div>
+      </footer>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

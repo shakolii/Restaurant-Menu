@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content" >
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="index.html" class="cart-icon">Home</a></li>
+              <div id="search-overlay" class="search-modal"></div>             
+              <li><a href="#" class="cart-icon" onclick="goToCart()">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+          
+        </div>
+
+        <div class="homepage">
+          <ul class="hp-img">
+            <li>
+              <img class="one" src="./photo/IMG_6637.JPG" alt="homepage" />
+            </li>
+            <li>
+              <img class="two" src="./photo/IMG_6635.JPG" alt="homepage" />
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="categories">
+        <h2>Menu</h2>
+        <div class="category-list">
+          <div class="scroll-list" id="scrollList">
+            <div class="category-card" onclick="goToBreakfast()">
+              <img src="./photo/category/IMG_6642.JPG" alt="Breakfast" />
+              <h3>Breakfast</h3>
+              <p>a great start.</p>
+            </div>
+            <div class="category-card" onclick="goToSeafood()">
+              <img src="./photo/category/IMG_6641.JPG" alt="seafood" />
+              <h3>Sea food</h3>
+              <p>Fresh and delicious</p>
+            </div>
+            <div class="category-card" onclick="salad()">
+              <img src="./photo/category/IMG_6645.JPG" alt="salad" />
+              <h3>Salad</h3>
+              <p>vibrant and healthy.</p>
+            </div>
+            <div class="category-card" onclick="steak()">
+              <img src="./photo/category/IMG_6643.JPG" alt="steak" />
+              <h3>Steak</h3>
+              <p>Richand premium.</p>
+            </div>
+            <div class="category-card" onclick="Dessert()">
+              <img src="./photo/category/IMG_6660.JPG" alt="dessert" />
+              <h3>Dessert</h3>
+              <p> crafted , experience.</p>
+            </div>
+            <div class="category-card" onclick="Drink()">
+              <img src="./photo/category/IMG_6661.JPG" alt="drink" />
+              <h3>Drink</h3>
+              <p>crafted, unique.</p>
+            </div>
+          </div>
+          <div class="button-container">
+            <button onclick="scrollToRight()" class="btn pre"><img src="./photo/arrow_forward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+            <button onclick="scrollToLeft()" class="btn next"><img src="./photo/arrow_back_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="contact">
+          <h3>Contact / Reservation</h3>
+          <p>Phone: 123-456-789</p>
+          <p>Adress: Main St</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

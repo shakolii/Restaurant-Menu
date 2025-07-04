@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steak Menu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content">
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="#">Home</a></li>
+              <li><a href="#" class="cart-icon" onclick="goToCart()">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="categories">
+        <h2>Steak Menu</h2>
+        <div class="category-list">
+              <div class="category" onclick="Ribeye()">
+                <img src="./photo/steak/Gemini_Generated_Image_p4dwmxp4dwmxp4dw.png" alt="">
+                <h3>Classic Ribeye</h3>
+            </div>
+            <div class="category" onclick="Deluxe ()">
+                <img src="./photo/steak/Gemini_Generated_Image_p4dwmyp4dwmyp4dw.png" alt="">
+                <h3>Deluxe New York Strip</h3>
+            </div>
+            <div class="category" onclick="Mignon()">
+                <img src="./photo/steak/Gemini_Generated_Image_p4dwmzp4dwmzp4dw.png" alt="">
+                <h3>Grand Filet Mignon</h3>
+            </div>
+            <div class="category" onclick="Garlic ()">
+                <img src="./photo/steak/Gemini_Generated_Image_p4dwn0p4dwn0p4dw.png" alt="">
+                <h3> Garlic & Rosemary Steak</h3>
+                <p></p>
+            </div>
+            <div class="category" onclick="GarlicButter()">
+                <img src="./photo/steak/Gemini_Generated_Image_p4dwn1p4dwn1p4dw.png" alt="">
+                <h3>Garlic Butter Steak</h3>
+                <p></p>
+            </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="contact">
+          <h3>Contact / Reservation</h3>
+          <p>Phone: 123-456-789</p>
+          <p>Adress: Main St</p>
+        </div>
+      </footer>
+    </div>
+    
+</body>
+<script src="./app.js"></script>
+</html>

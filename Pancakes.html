@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancakes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content">
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="#">Home</a></li>
+              <li><a href="#" class="cart-icon">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="product-detail">
+        <img src="./photo/breakfast/IMG_6680.PNG" >
+        <h1 id="product-name">Pancakes</h1> <p class="description">Description:
+ Three golden-brown, fluffy buttermilk pancakes, perfectly cooked and served with a pat of rich butter and warm maple syrup. A timeless and comforting breakfast delight that's sure to brighten your morning.
+
+</p>
+        <p class="price" id="product-price">$10.99</p> <div class="options">
+            <h3>Add-ons:</h3>
+            <ul>
+                <li><input type="checkbox" id="addon-Extra-Berries" data-addon-name="Extra Berries" data-addon-price="2.00"><label for="addon-Extra-Berries">Extra Berries (+$2.00) </label></li>
+                <li><input type="checkbox" id="addon-Whipped-Cream" data-addon-name="Whipped Cream" data-addon-price="1.50"><label for="addon-Whipped-Cream">Whipped Cream (+$1.50)</label></li>
+                <li><input type="checkbox" id="addon-Chocolate-Chips" data-addon-name="Chocolate Chips" data-addon-price="1.75"><label for="addon-Chocolate-Chips">Chocolate Chips (+$1.75)</label></li>
+            </ul>
+        </div>
+        <button class="add-to-cart-btn" onclick="handleAddToCart()">Add to cart</button> <div class="allergens">
+            <p><strong>Allergens:</strong>Dairy, Wheat, Eggs.
+
+</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="contact">
+          <h3>Contact / Reservation</h3>
+          <p>Phone: 123-456-789</p>
+          <p>Adress: Main St</p>
+        </div>
+      </footer>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

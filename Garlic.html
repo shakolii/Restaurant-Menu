@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garlic & Rosemary Steak</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content">
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="#">Home</a></li>
+              <li><a href="#" class="cart-icon">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="product-detail">
+        <img src="./photo/steak/Gemini_Generated_Image_p4dwn0p4dwn0p4dw.png" >
+        <h1 id="product-name">Garlic & Rosemary Steak</h1> <p class="description">Description:
+ An exquisite steak, perfectly cooked and infused with the aromatic flavors of roasted garlic and fresh rosemary. Elegantly drizzled with truffle oil and served on a dark platter for a stunning visual presentation. A profound and delectable culinary experience.
+
+</p>
+        <p class="price" id="product-price">$98.00</p> 
+        <div class="options">
+            <h3>Add-ons:</h3>
+            <ul>
+                <li><input type="checkbox" id="addon-Creamed-Spinach" data-addon-name="Creamed Spinach" data-addon-price="4.50"><label for="addon-Creamed-Spinach">Creamed Spinach (+$4.50) </label></li>
+                <li><input type="checkbox" id="addon-Baked-Potato-with-Sour-Cream" data-addon-name="Baked Potato with Sour Cream" data-addon-price="5.00"><label for="addon-Baked-Potato-with-Sour-Cream">Baked Potato with Sour Cream (+$5.00)</label></li>
+            </ul>
+        </div>
+        <button class="add-to-cart-btn" onclick="handleAddToCart()">Add to cart</button> <div class="allergens">
+            <p><strong>Allergens:</strong> Dairy (Creamed Spinach, Sour Cream if added)
+
+</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="contact">
+          <h3>Contact / Reservation</h3>
+          <p>Phone: 123-456-789</p>
+          <p>Adress: Main St</p>
+        </div>
+      </footer>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

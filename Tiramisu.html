@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Filet Mignon</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content">
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="#">Home</a></li>
+              <li><a href="#" class="cart-icon">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="product-detail">
+        <img src="./photo/dessert/Gemini_Generated_Image_jycw19jycw19jycw.png" >
+        <h1 id="product-name">Classic Tiramisu</h1> <p class="description">Description:
+ Layers of espresso-soaked ladyfingers and creamy mascarpone cheese, dusted with fine cocoa powder. A timeless Italian indulgence.
+
+</p>
+        <p class="price" id="product-price">$11.00</p> 
+        <div class="options">
+            <h3>Add-ons:</h3>
+            <ul>
+                <li><input type="checkbox" id="addon-Dark-Chocolate-Shavings" data-addon-name="Dark Chocolate Shavings" data-addon-price="1.50"><label for="addon-Dark-Chocolate-Shavings">Dark Chocolate Shavings (+$1.50) </label></li>
+                <li><input type="checkbox" id="addon-Espresso-Shot" data-addon-name="Espresso Shot" data-addon-price="2.00"><label for="addon-Espresso-Shot">Espresso Shot Sauce (+$2.00)</label></li>
+            </ul>
+        </div>
+        <button class="add-to-cart-btn" onclick="handleAddToCart()">Add to cart</button> <div class="allergens">
+            <p><strong>Allergens:</strong> Dairy, Eggs, Gluten (Wheat), Coffee
+
+
+</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="contact">
+          <h3>Contact / Reservation</h3>
+          <p>Phone: 123-456-789</p>
+          <p>Adress: Main St</p>
+        </div>
+      </footer>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Burrito</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content">
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="#">Home</a></li>
+              <li><a href="#" class="cart-icon">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="product-detail">
+        <img src="./photo/breakfast/IMG_6675.PNG" >
+        <h1 id="product-name">Breakfast Burrito</h1> <p class="description">Description:
+A warm flour tortilla filled with fluffy scrambled eggs, your choice of savory filling, melted cheese, and a fresh salsa. A satisfying and portable breakfast option, perfect for on-the-go mornings.
+
+</p>
+        <p class="price" id="product-price">$11.50</p> <div class="options">
+            <h3>Add-ons:</h3>
+            <ul>
+                <li><input type="checkbox" id="addon-Extra-Cheese" data-addon-name="Extra Cheese" data-addon-price="1.00"><label for="addon-Extra-Cheese">Extra Cheese (+$1.00) </label></li>
+                <li><input type="checkbox" id="addon-Guacamole" data-addon-name="Guacamole" data-addon-price="2.00"><label for="addon-Guacamole">Guacamole (+$2.00)</label></li>
+                <li><input type="checkbox" id="addon-Sour-Cream" data-addon-name="Sour Cream" data-addon-price="0.75"><label for="addon-Sour-Cream">Sour Cream (+$0.75)</label></li>
+            </ul>
+        </div>
+        <button class="add-to-cart-btn" onclick="handleAddToCart()">Add to cart</button> <div class="allergens">
+            <p><strong>Allergens:</strong>Wheat (from tortilla), Eggs, Dairy (from cheese, sour cream), possibly Soy (in some tortillas or processed meats), and other allergens depending on the specific filling chosen (e.g., pork for bacon/sausage).
+
+</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="contact">
+          <h3>Contact / Reservation</h3>
+          <p>Phone: 123-456-789</p>
+          <p>Adress: Main St</p>
+        </div>
+      </footer>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

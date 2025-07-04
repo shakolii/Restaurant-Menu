@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+       <header class="hero">
+        <div class="overlay">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./photo/Screenshot 2025-06-01 151041.png" alt="logo" />
+            </div>
+            <div class="hero-content">
+              <h1>Restaurant</h1>
+            </div>
+            <ul class="nav-links">
+              <li onclick="Home()"><a href="#">Home</a></li>
+              <li><a href="#" class="cart-icon">🛒 <span class="cart-item-count">0</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+    <main class="cart-page-content">
+        <h1>Your Shopping Cart</h1>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <img src="URL_OF_PANCAKES_THUMBNAIL_IMAGE" alt="Pancakes" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h2 class="cart-item-name">Pancakes</h2>
+                    <p class="cart-item-base-price">Base Price: $12.99</p>
+                    <div class="cart-item-addons">
+                        <p>Add-ons:</p>
+                        <ul>
+                            <li>Extra Berries (+$2.00)</li>
+                            <li>Whipped Cream (+$1.50)</li>
+                        </ul>
+                    </div>
+                    <p class="cart-item-total-price">Total for Item: $16.49</p>
+                </div>
+                <div class="cart-item-quantity-control">
+                    <button class="quantity-btn decrease-qty">-</button>
+                    <input type="number" value="1" min="1" class="item-quantity-input">
+                    <button class="quantity-btn increase-qty">+</button>
+                </div>
+                <button class="remove-item-btn">Remove</button>
+            </div>
+            <div class="cart-item">
+                <img src="URL_OF_BACON_HASH_BROWNS_THUMBNAIL_IMAGE" alt="Bacon and Hash Browns" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h2 class="cart-item-name">Bacon and Hash Browns</h2>
+                    <p class="cart-item-base-price">Base Price: $10.25</p>
+                    <div class="cart-item-addons">
+                        <p>Add-ons:</p>
+                        <ul>
+                            <li>Fried Egg (+$1.75)</li>
+                        </ul>
+                    </div>
+                    <p class="cart-item-total-price">Total for Item: $12.00</p>
+                </div>
+                <div class="cart-item-quantity-control">
+                    <button class="quantity-btn decrease-qty">-</button>
+                    <input type="number" value="2" min="1" class="item-quantity-input">
+                    <button class="quantity-btn increase-qty">+</button>
+                </div>
+                <button class="remove-item-btn">Remove</button>
+            </div>
+            <div class="empty-cart-message" style="display: none;">
+                <p>Your cart is empty! Time to fill it with delicious breakfast.</p>
+                <a href="#" class="go-to-menu-btn">Go to Menu</a>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-line">
+                <span>Subtotal:</span>
+                <span class="summary-value">$28.49</span> </div>
+            <div class="summary-line total-line">
+                <span>Total:</span>
+                <span class="summary-value final-total">$28.49</span>
+            </div>
+            <button class="proceed-to-checkout-btn">Proceed to Checkout</button>
+            <a href="#" class="continue-shopping-link">Continue Shopping</a>
+        </div>
+    </main>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
